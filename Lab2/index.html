@@ -3,21 +3,23 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HW2</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW5</title>
 </head>
 
 <body>
-    <h1>Jackson Rosenthal</h1>
-    <a href="ex2.1.html">Exercise 2.1</a>
-    <a href="ex2.2.html">Exercise 2.2</a>
-    <a href="ex2.3.html">Exercise 2.3</a>
-    <a href="ex2.4.html">Exercise 2.4</a>
-    <a href="ex2.5.html">Exercise 2.5</a>
+    <form action="database.php" method="POST">
+        <h1>Querying a MySQL database</h1>
 
-
-
+        <p>Select a field to display:
+            <select name="query">
+                <option value="*">*</option>
+                <option value="ID">ID</option>
+                <option value="TITLE">Title</option>
+                <option value="CATEGORY">Category</option>
+                <option value="ISBN">ISBN</option>
+            </select> </p>
+        <button type="submit">Send Query</button>
+    </form>
 </body>
 
 </html>
