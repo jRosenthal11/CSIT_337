@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ex1.7</title>
+    <meta charset="utf-8">
+</head>
+<style>
+    form{
+        display: table;
+    }
+    p{
+        display: table-row;
+    }
+    label {
+        display: table-cell;
+    }
+    input {
+        display: table-cell;
+    }
+
+</style>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Excercise of Web Form</legend>
+            <p>
+                <label for="a">First Name:</label> <input id="a" type="text" placeholder="First Name"><br>
+            </p>
+            <p>
+                <label for="b">Last Name: </label> <input id="b" type="text" placeholder="Last Name"><br>
+            </p>
+            <p>
+                <label for="b">Email Address: </label> <input id="b" type="text" placeholder="your@email.com"><br>
+            </p>
+            <p>
+                <label for="b">Phone Number: </label> <input id="b" type="text" placeholder="(000)-000-0000"><br>
+            </p>
+            <p>
+                <label for="b">Resident State: </label> <select id="b">
+                    <option>AL</option>
+                    <option>AK</option>
+                    <option>AZ</option>
+                    <option>AR</option>
+                    <option>CA</option>
+                    <option>CO</option>
+                    <option>CT</option>
+                    <option>DE</option>
+                    <option>FL</option>
+                    <option>GA</option>
+                    <option>HI</option>
+                    <option>ID</option>
+                    <option>IL</option>
+                    <option>IN</option>
+                    <option>IA</option>
+                    <option>KS</option>
+                    <option>KY</option>
+                    <option>LA</option>
+                    <option>ME</option>
+                    <option>MD</option>
+                    <option>MA</option>
+                    <option>MI</option>
+                    <option>MN</option>
+                    <option>MS</option>
+                    <option>MO</option>
+                    <option>MT</option>
+                    <option>NE</option>
+                    <option>NV</option>
+                    <option>NH</option>
+                    <option>NJ</option>
+                    <option>NM</option>
+                    <option>NY</option>
+                    <option>NC</option>
+                    <option>ND</option>
+                    <option>OH</option>
+                    <option>OK</option>
+                    <option>OR</option>
+                    <option>PA</option>
+                    <option>RI</option>
+                    <option>SC</option>
+                    <option>SD</option>
+                    <option>TN</option>
+                    <option>TX</option>
+                    <option>UT</option>
+                    <option>VT</option>
+                    <option>VA</option>
+                    <option>WA</option>
+                    <option>WV</option>
+                    <option>WI</option>
+                    <option>WY</option>
+
+                </select>
+            </p>
+            <br><br>
+
+            Age Group: <br>
+            <input type="radio" name="0-20"> 0-20 <br>
+            <input type="radio" name="21-40"> 21-40 <br>
+            <input type="radio" name="41-60"> 41-60 <br>
+            <input type="radio" name="Over 60"> Over 60 <br>
+
+            <br>
+
+            Membership: <br>
+            <input type="checkbox" name="AAA"> AAA
+            <input type="checkbox" name="Costco"> Costco
+            <input type="checkbox" name="IEEE"> IEEE
+            <input type="checkbox" name="ACM"> ACM
+
+            <br>
+
+            Comments: <br>
+            <textarea name="Comments" cols="30" rows="3"></textarea>
+            <br>
+
+            <input type="submit" name="submit" value="Register">
+            <input type="reset" name="reset" value="Start Over">
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

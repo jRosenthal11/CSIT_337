@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex-2</title>
+</head>
+
+<body>
+    <form action="calculate_charge.php" method="POST">
+        <p>Fill out this form to calculate the total cost:</p>
+
+        <label for="a">Price:</label><input type="text" name="price" id="a" required><br><br>
+        <label for="a">Quantity:</label><input type="text" name="quantity" id="a" required><br><br>
+        <label for="a">Discount:</label><input type="text" name="discount" id="a" required><br><br>
+        <label for="a">Tax:</label><input type="text" name="tax" id="a" required>(%) <br><br>
+        <label for="a">Shipping Method:</label>
+        <select name="shipping_method">
+            <option value="5.00">Slow and steady....</option>
+            <option value="9.95">Put a move on it.</option>
+            <option value="19.36">I need it yesterday!</option>
+        </select><br><br>
+
+        <label for="a">Number of payments to make:</label><input type="text" name="payments" id="a" required><br><br>
+
+        <button type="submit">Calculate!</button>
+    </form>
+
+</body>
+
+</html>

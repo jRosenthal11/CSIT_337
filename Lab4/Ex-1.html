@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex-1</title>
+</head>
+
+
+<body>
+
+    <form action="display_information.php" method="POST">
+        <p>Please complete this form to submit your feedback.</p>
+        <p><label for="a">Name: <select name="prefix">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Mrs.">Mrs.</option>
+                </select></label> <input id="a" class="textBox" type="text" name="name"></p>
+
+        <p><label for="a">Email Address: </label><input type="text" class="textBox" id="a" name="email_address"
+                required></p>
+        <p><label for="a">Phone Number: </label><input type="text" class="textBox" id="a" name="phone_number" required></p>
+
+        <p>Rating... <input name="rating" type="radio" value="excellent">excellent <input name="rating" type="radio"
+                value="okay">okay
+            <input name="rating" type="radio" value="boring">boring</p>
+
+        Comments: <textarea name="comments" id="a" cols="30" rows="5"></textarea><br><br>
+        <button type="submit">Send My Feedback</button>
+
+    </form>
+
+</body>
+
+</html>

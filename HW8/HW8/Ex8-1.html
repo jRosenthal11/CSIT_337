@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ex8-1</title>
+    <script>
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            var ms = today.getMilliseconds();
+            var msFormat = ms/100;
+            var format = msFormat.toFixed(0);
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('time').innerHTML = h + ":" + m + ":" + s + "." + format;
+            t = setTimeout(function () {
+                startTime()
+            }, 100);
+        }
+        startTime();
+    </script>
+</head>
+
+<body>
+    <button onclick="startTime()">What time is it?</button>
+    <p id="time"></p>
+    <p id="ms"></p>
+
+</body>
+
+</html>

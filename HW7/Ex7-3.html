@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex7-3</title>
+    <script>
+        var choice;
+        numbers = [];
+
+        while (numbers.length < 3) {
+            choice = window.prompt("Enter a number:");
+            if (choice >= 5 && choice <= 20) {
+                numbers.push(choice);
+            } else {
+                choice = window.prompt("Enter a number between 5 and 20: ");
+            }
+        }
+        var star = "*"
+
+        document.writeln("<p style = 'color:red'>" + star.repeat(numbers[0]) + " </p>");
+        document.writeln("<p style = 'color:yellow'>" + star.repeat(numbers[1]) + " </p>");
+        document.writeln("<p style = 'color:blue'>" + star.repeat(numbers[2]) + " </p>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

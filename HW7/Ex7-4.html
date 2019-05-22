@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex7-4</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            padding: 4px;
+
+        }
+    </style>
+    <script>
+        var choice;
+        var numbers = [];
+        var count;
+
+        while (numbers.length < 2) {
+            choice = parseInt(window.prompt("Enter a number between 1 and 20:"));
+            if (choice >= 1 && choice <= 20) {
+                numbers.push(choice);
+            } else {
+                choice = parseInt(window.prompt("Please enter a number between 1 and 20: "));
+            }
+        }
+        document.writeln("<table>");
+        document.writeln("<thead><tr><th>Number</th>");
+        document.writeln("<th>Square</th>");
+        document.writeln("<th>Cube</th>");
+        document.writeln("</tr></thead><tbody>");
+        if (numbers[1] < numbers[0]) {
+            count = numbers[1];
+            while (count <= numbers[0]) {
+                document.writeln("<tr><td>" + count + "</td><td>" + Math.pow(count, 2) + "</td><td>" +
+                    Math.pow(count, 3) + "</td></tr>");
+                count++;
+
+            }
+        } else {
+            count = numbers[0];
+            while (count <= numbers[1]) {
+                document.writeln("<tr><td>" + count + "</td><td>" + Math.pow(count, 2) + "</td><td>" +
+                    Math.pow(count, 3) + "</td></tr>");
+                count++;
+
+
+            }
+
+        }
+
+        document.writeln("</tbody></table>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ex3-2</title>
+</head>
+
+<style>
+    button.dropbtn {
+        background-color: red;
+        color: cyan;
+        padding: 16px;
+        font-size: 20px;
+        border: solid blue;
+    }
+
+    div.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    div.dropdown-content {
+        display: none;
+        position: absolute;
+    }
+
+    div.dropdown-content li {
+        color: white;
+        background: black;
+        font-size: 20px;
+        border: none;
+    }
+
+    div.dropdown-content li:hover {
+        background-color: yellow;
+        color: brown;
+    }
+
+    div.dropdown:hover div.dropdown-content {
+        display: block;
+        size: 20px;
+    }
+</style>
+
+<body>
+    <table class="main-table">
+        <tr>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">Some Colleges at MSU</button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>College of Math and Sciences</li>
+                            <li>Business School</li>
+                            <li>College of Humanities and Social Sciences</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">Departments in CSAM</button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>Biology</li>
+                            <li>Computer ScienceS</li>
+                            <li>Math</li>
+                            <li>Chemistry</li>
+                            <li>Earth and Environment Studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

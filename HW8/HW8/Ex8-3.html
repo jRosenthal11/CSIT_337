@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ex8-3</title>
+
+</head>
+<style>
+    p {
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <p id="button1" onclick="changeColor1()">Welcome to CSIT: Click me to change color.</p>
+    <p id="button2" onclick="changeColor2()">Welcome to CSIT: Click me to change color.</p>
+    <p id="button3" onclick="changeColor3()">Welcome to CSIT: Click me to change color.</p>
+    <p id="button4" onclick="changeColor4()">Welcome to CSIT: Click me to change color.</p>
+</body>
+<script>
+    var colors = ["blue", "green", "red", "purple", "cyan", "orange", "yellow", "black", "grey"];
+
+    function changeColor1() {
+        var number = Math.floor(Math.random() * colors.length);
+        document.getElementById("button1").style.color = colors[number];
+    }
+    function changeColor2() {
+        var number = Math.floor(Math.random() * colors.length);
+        document.getElementById("button2").style.color = colors[number];
+        
+    }
+    function changeColor3() {
+        var number = Math.floor(Math.random() * colors.length);
+        document.getElementById("button3").style.color = colors[number];
+        
+    }
+    function changeColor4() {
+        var number = Math.floor(Math.random() * colors.length);
+        document.getElementById("button4").style.color = colors[number];
+      
+    }
+</script>
+
+</html>

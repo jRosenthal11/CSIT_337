@@ -1,0 +1,84 @@
+<!-- Control movement of CS logo on browser window -->
+<!-- by JJ for CSIT 337 -->
+<html>
+
+<head>
+    <title>Bouncing Moon</title>
+    <!-- The CSLogo is copied from cs web site which has -->
+    <!-- width 102px; and height 102 px -->
+    <!—the div.bound set up a boundary for cs_logo2.png to bouncing
+-->
+    <style>
+        div.bound {
+            display: block;
+            border-style: solid;
+            width: 1920px;
+            height: 1080px;
+            border-width: 1px;
+        }
+
+        div.move {
+            position: absolute;
+        }
+
+        div {
+            background-color: black;
+        }
+    </style>
+    <script language="javascript">
+        var choice = parseInt(window.prompt("1. Faster, 2.Normal, 3.Slower"));
+
+        if (choice == 1) {
+            var xoffset = 20; 
+            var yoffset = 20; 
+
+        }
+        if (choice == 2) {
+            var xoffset = 10; //Move 10px every step
+            var yoffset = 10; //Move 10px every step
+
+        }
+        if (choice == 3) {
+            var xoffset = 5; 
+            var yoffset = 5; 
+
+        }
+        if(choice != 1 || choice != 2 || choice != 3){
+            var xoffset = 10;
+            var yoffset = 10;
+        }
+
+        var x = 5; //Starting x coord.
+        var y = 5; //Starting y coord.
+        var max_x = 1296; //maximum x coord.
+        var max_y = 456; //maximum y coord.
+        function go() {
+            moveCSLogo()
+        }
+
+        function moveCSLogo() {
+            x = x + xoffset;
+            y = y + yoffset;
+            //Move the image to the new location
+            document.getElementById("msucs").style.top = y + 'px';
+            document.getElementById("msucs").style.left = x + 'px';
+            //if reach boundaries, reset offset vectors
+            if ((x + xoffset > max_x) || (x + xoffset < 0))
+                xoffset *= -1;
+            if ((y + yoffset > max_y) || (y + yoffset < 0))
+                yoffset *= -1;
+            window.setTimeout('moveCSLogo()', 100);
+            //call moveCSLogo every 100 ms
+        }
+    </script>
+</head>
+
+<body onload="go()">
+    <div class="bound">
+        <div id="msucs" class="move">
+            <img src="super-moon.png" alt="need image here" />
+        </div>
+    </div>
+</body>
+
+</html>
